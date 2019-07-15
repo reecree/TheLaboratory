@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MeasureActivity"
+    tools:showIn="@layout/activity_measure">
+
+    <TextView
+        android:id="@+id/new_measurement_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Measurement Name:"
+        android:textSize="8pt"
+        android:layout_marginStart="@dimen/margin_medium"
+        android:layout_marginTop="@dimen/margin_medium"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
+    <EditText
+        android:id="@+id/measurement_name_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_large"
+        android:layout_marginEnd="@dimen/margin_large"
+        app:layout_constraintTop_toBottomOf="@id/new_measurement_text"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+    <TextView
+        android:id="@+id/new_measurement_type_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="8pt"
+        android:text="New Measurement Type:"
+        android:layout_marginStart="@dimen/margin_medium"
+        android:layout_marginEnd="@dimen/margin_small"
+        android:layout_marginTop="@dimen/margin_medium"
+        app:layout_constraintTop_toBottomOf="@id/measurement_name_text"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
+    <Spinner
+        android:id="@+id/measurement_type_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="8pt"
+        android:layout_marginTop="@dimen/margin_medium"
+        app:layout_constraintTop_toBottomOf="@id/measurement_name_text"
+        app:layout_constraintLeft_toRightOf="@id/new_measurement_type_text"/>
+
+</android.support.constraint.ConstraintLayout>
