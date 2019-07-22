@@ -1,4 +1,4 @@
-package com.rupert.thelaboratory.measurement;
+package com.rupert.thelaboratory.Measurement;
 
 public class Date extends MeasurementType {
     public Date() {

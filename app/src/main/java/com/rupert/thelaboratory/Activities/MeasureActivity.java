@@ -1,18 +1,14 @@
-package com.rupert.thelaboratory;
+package com.rupert.thelaboratory.Activities;
 
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 
-import com.rupert.thelaboratory.measurement.Count;
-import com.rupert.thelaboratory.measurement.Date;
-import com.rupert.thelaboratory.measurement.Measurement;
-import com.rupert.thelaboratory.measurement.MeasurementType;
+import com.rupert.thelaboratory.R;
+import com.rupert.thelaboratory.Measurement.Count;
+import com.rupert.thelaboratory.Measurement.Date;
 
 public class MeasureActivity extends AppCompatActivity {
 
@@ -30,6 +26,8 @@ public class MeasureActivity extends AppCompatActivity {
                 android.R.layout.simple_spinner_item, measurementTypes);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinner.setAdapter(adapter);
+
+
     }
 
 }

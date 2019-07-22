@@ -1,4 +1,4 @@
-package com.rupert.thelaboratory;
+package com.rupert.thelaboratory.Activities;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -12,8 +12,9 @@ import android.support.v7.widget.RecyclerView;
 import android.view.MenuItem;
 import android.view.View;
 
-import com.rupert.thelaboratory.measurement.Date;
-import com.rupert.thelaboratory.measurement.Measurement;
+import com.rupert.thelaboratory.Adapters.HomeRecycleAdapter;
+import com.rupert.thelaboratory.R;
+import com.rupert.thelaboratory.Measurement.Measurement;
 
 import java.util.Vector;
 
