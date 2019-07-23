@@ -49,13 +49,13 @@
         app:layout_constraintLeft_toRightOf="@id/new_measurement_type_text"/>
 
     <LinearLayout
-        android:id="@+id/count_add"
+        android:id="@+id/measure_bucket"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/margin_huge"
         app:layout_constraintTop_toBottomOf="@id/measurement_type_spinner"
         app:layout_constraintLeft_toLeftOf="parent">
-        <include layout="@layout/create_count" />
+        <!--<include layout="@layout/create_count" />-->
     </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>
